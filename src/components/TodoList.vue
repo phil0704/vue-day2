@@ -52,7 +52,7 @@ export default {
            this.todos[todoIndex].completed = true;
        },
        addTodo ( event ) {
-           event.preventDefault(); // Stop this form from refreshing the page!
+           event.preventDefault(); // Stop the form from refreshing the page!
            const newTodo = this.newTodo;
            this.todos.push( {
                task: newTodo,

@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <h1>Vue Day 2</h1>
+    <Accordion />
     <TodoList />
   </div>
 </template>
 
 <script>
 import TodoList from './components/TodoList.vue'
+import Accordion from './components/Accordion.vue'
 
 export default {
   name: 'App',
   components: {
-    TodoList
+    TodoList,
+    Accordion
   }
 }
 </script>
