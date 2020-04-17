@@ -1,6 +1,6 @@
 <template>
    <article class="accordion" :class="{ 'accordion-hide': hide }">
-      <h2>My Accordion</h2>
+      <h2 @click="toggleHide()">My Accordion</h2>
       <p>
           I'm text that will hide and show! 
           Click the title to toggle my visibility. :)
@@ -15,6 +15,12 @@
           return {
               hide: true
           }  
+      },
+      methods: {
+          toggleHide () {
+           // Convert boolean from true to false, or false to true.   
+              this.hide = !this.hide;
+          }
       }
   }
 </script>
